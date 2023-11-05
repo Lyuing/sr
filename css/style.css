@@ -359,9 +359,36 @@ a.two.scroll {
 
 /*-- Gallery Section --*/
 
-.gallery-grid1 img {
+
+.product-section {
+    overflow: hidden;
+    padding: 0 8px;
+}
+
+.gallery-grid1 .img-product {
     width: 100%;
+    height: 100%;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+.gal-sec {
+    padding: 8px;
+}
+.gal-inner {
+    overflow: hidden;
+    border-radius: 8px;
+    display: block;
+}
+.gal-holder {
+    position: relative;
+}
+.gal-holder::before{
+    content: '';
+    display: block;
+    padding-top: 66%;
 }
 
 /*--Gallery hover effect--*/
@@ -427,9 +454,6 @@ a.two.scroll {
     letter-spacing: 2px;
 }
 
-.gal-sec {
-    padding: 0;
-}
 
 /*-- //Gallery Section --*/
 
