@@ -1,194 +1,87 @@
 
-
+const bannersDto = [
+  {src: 'https://pic.imgdb.cn/item/654f6e77c458853aef12bf5e.jpg'},
+  {src: 'https://pic.imgdb.cn/item/654f6e77c458853aef12bfdf.jpg'},
+]
+const visitsDto = [
+  'https://pic.imgdb.cn/item/654f847bc458853aef75a38f.jpg',
+  'https://pic.imgdb.cn/item/654f847bc458853aef759ff4.jpg',
+  'https://pic.imgdb.cn/item/654f847bc458853aef75a230.jpg',
+  'https://pic.imgdb.cn/item/654f847bc458853aef75a400.jpg',
+  'https://pic.imgdb.cn/item/654f84dfc458853aef77b86b.jpg',
+]
 const dto = [
   {
-    title: 'Titanium Bar/Rod （钛棒）',
+    title: 'Titanium Plate （钛板）',
+    description: 'High Quantity GR5 GR7 Titanium Plates And Sheets Titanium Alloy Factory Supply Hot Sale.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/653e03b9c458853aeff2b2e5.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e041bc458853aeff4c2b4.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e042ac458853aeff5109e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e043dc458853aeff58550.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e0449c458853aeff5d7e4.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e0449c458853aeff5d852.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e044ac458853aeff5d89e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e044ac458853aeff5d900.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f7fb4c458853aef5d6558.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f80cdc458853aef63198e.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f811dc458853aef64a849.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8142c458853aef655e47.jpg' },
     ],
   },
   {
-    title: 'Titanium Foil （钛箔）',
+    title: 'Titanium Bar/Rod （钛棒）',
+    description: 'Wholesale ASTM F1713 TI13NB13ZR Titanium Bar Medical Grade 2 5MM Titanium ROD.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85972.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85a17.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85a67.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85ab1.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f81e0c458853aef686913.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f81ffc458853aef690a84.jpg' },
+      // { src: 'https://pic.imgdb.cn/item/653e042ac458853aeff5109e.jpg' },
+      // { src: 'https://pic.imgdb.cn/item/653e043dc458853aeff58550.jpg' },
     ],
   },
   {
     title: 'Titanium Tube （钛管）',
+    description: 'ASTM B338 B16 Grade 2 Seamless Titanium Tube.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/65464146c458853aef8abcc4.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464146c458853aef8abd9f.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464146c458853aef8abeba.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464147c458853aef8ac89f.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464145c458853aef8abac5.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654648edc458853aefb147a6.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654648edc458853aefb147d6.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654648edc458853aefb1472c.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Plate （钛板）',
-    pictures: [
-      { src: 'https://pic.imgdb.cn/item/6546489ac458853aefafcc2f.jpg' },
-      { src: 'https://pic.imgdb.cn/item/6546489ac458853aefafcc98.jpg' },
-      { src: 'https://pic.imgdb.cn/item/6546489ac458853aefafccc2.jpg' },
-      { src: 'https://pic.imgdb.cn/item/6546489ac458853aefafcd14.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8234c458853aef6a1a6b.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8251c458853aef6abdfd.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8291c458853aef6c13dc.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f82b2c458853aef6d4f74.jpg' },
+      ,
     ],
   },
   {
     title: 'Titanium Flange （钛法兰）',
+    description: 'ANSI B16.5 DIN 150L BS Forging Carbon Steel Pipe Class 150 RF,FF,RTJ Weld Neck Flanges.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/65464867c458853aefaeb209.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f82e4c458853aef6e64a6.jpg' },
       { src: 'https://pic.imgdb.cn/item/65464867c458853aefaeb25c.jpg' },
       { src: 'https://pic.imgdb.cn/item/65464867c458853aefaeb2f5.jpg' },
       { src: 'https://pic.imgdb.cn/item/65464867c458853aefaeb3a1.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464867c458853aefaeb143.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464885c458853aefaf5fc9.jpg' },
+     ,
     ],
   },
   {
     title: 'Titanium Wire （钛丝）',
+    description: 'GR1 GR2 The Standard ASTM B863 Titanium Wire.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/65464843c458853aefade28e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464844c458853aefade308.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464844c458853aefade389.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Pipe Fittings （钛管件）',
-    pictures: [
-      { src: 'https://pic.imgdb.cn/item/65464811c458853aefacdc09.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464811c458853aefacdc52.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464811c458853aefacdc96.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464811c458853aefacdcdf.jpg' },
-    ],
+      { src: 'https://pic.imgdb.cn/item/654f838bc458853aef71691d.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f83a5c458853aef71e24f.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f83b6c458853aef722c49.jpg' },
+      { src:'https://pic.imgdb.cn/item/654f83edc458853aef732335.jpg'}
+    ]
   },
   {
     title: 'Titanium Fasteners （钛紧固件）',
+    description: 'M14-1.5*28mm Titanium Alloy Car Wheel Bolts Audi Volkswagen Series Car Accessories Factory Supply Hot Sale.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/65464776c458853aefa9b459.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464776c458853aefa9b48e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464776c458853aefa9b4c5.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464776c458853aefa9b56e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/65464776c458853aefa9b3f8.jpg' },
-
-      { src: 'https://pic.imgdb.cn/item/654647a6c458853aefaaa3d8.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647a6c458853aefaaa414.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647a6c458853aefaaa4b0.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647a6c458853aefaaa549.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647a6c458853aefaaa3a6.jpg' },
-
-      { src: 'https://pic.imgdb.cn/item/654647d2c458853aefab7fda.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647d2c458853aefab804f.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647d2c458853aefab8137.jpg' },
-      { src: 'https://pic.imgdb.cn/item/654647d2c458853aefab7ef6.jpg' },
-    ],
-  },
-]
-
-const dtoSuper = [
-  {
-    title: 'Titanium Bar/Rod （钛棒）',
-    pictures: [
-      { src: 'https://pic.imgdb.cn/item/653e03b9c458853aeff2b2e5.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e041bc458853aeff4c2b4.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e042ac458853aeff5109e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e043dc458853aeff58550.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e0449c458853aeff5d7e4.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e0449c458853aeff5d852.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e044ac458853aeff5d89e.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e044ac458853aeff5d900.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f844ac458853aef74ba1a.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8460c458853aef751abe.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f847cc458853aef75a998.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f848ec458853aef760d2d.jpg' },
     ],
   },
   {
-    title: 'Titanium Foil （钛箔）',
+    title: 'Titanium Parts CNC Machining Service （定制加工件）',
+    description: 'Parts Machining CNC Custom Machined Turning Supplier Milling Spare Part Factory Plastic Metal Steel Brass Aluminum CNC Service.',
     pictures: [
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85972.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85a17.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85a67.jpg' },
-      { src: 'https://pic.imgdb.cn/item/653e04b2c458853aeff85ab1.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Tube （钛管）',
-    pictures: [
-      { src: 'https://pic.superbed.cc/item/654642492388770f4decc214.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546427e2388770f4decc2bc.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546427e2388770f4decc2c1.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546427e2388770f4decc2c7.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546427e2388770f4decc2b9.jpg' },
-      { src: 'https://pic.superbed.cc/item/654642ed2388770f4decc4e2.jpg' },
-      { src: 'https://pic.superbed.cc/item/654642ed2388770f4decc4e6.jpg' },
-      { src: 'https://pic.superbed.cc/item/654642ed2388770f4decc4e0.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Plate （钛板）',
-    pictures: [
-      { src: 'https://pic.superbed.cc/item/6546431f2388770f4decc5a2.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546431f2388770f4decc5a6.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546431f2388770f4decc5ac.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546431f2388770f4decc59f.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Flange （钛法兰）',
-    pictures: [
-      { src: 'https://pic.superbed.cc/item/654643972388770f4decc7c4.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643972388770f4decc7c8.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643972388770f4decc7d0.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643972388770f4decc7c2.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643c02388770f4decc886.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643c02388770f4decc884.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Wire （钛丝）',
-    pictures: [
-      { src: 'https://pic.superbed.cc/item/654644152388770f4decc9d2.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643e82388770f4decc926.jpg' },
-      { src: 'https://pic.superbed.cc/item/654643e82388770f4decc924.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Pipe Fittings （钛管件）',
-    pictures: [
-      { src: 'https://pic.superbed.cc/item/654644f22388770f4deccc73.jpg' },
-      { src: 'https://pic.superbed.cc/item/654644f22388770f4deccc78.jpg' },
-      { src: 'https://pic.superbed.cc/item/654644f22388770f4deccc7e.jpg' },
-      { src: 'https://pic.superbed.cc/item/654644f22388770f4deccc71.jpg' },
-    ],
-  },
-  {
-    title: 'Titanium Fasteners （钛紧固件）',
-    pictures: [
-      { src: 'https://pic.superbed.cc/item/654645372388770f4deccde4.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645372388770f4deccdea.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645372388770f4deccdef.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645372388770f4deccdf6.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645372388770f4deccde2.jpg' },
-
-      { src: 'https://pic.superbed.cc/item/654645e42388770f4decd02f.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645e42388770f4decd037.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645e42388770f4decd022.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645e42388770f4decd024.jpg' },
-      { src: 'https://pic.superbed.cc/item/654645e42388770f4decd02a.jpg' },
-
-      { src: 'https://pic.superbed.cc/item/6546462f2388770f4decd150.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546462f2388770f4decd155.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546462f2388770f4decd15a.jpg' },
-      { src: 'https://pic.superbed.cc/item/6546462f2388770f4decd14e.jpg' },
-    ],
+      { src: 'https://pic.imgdb.cn/item/654f8518c458853aef78d246.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8542c458853aef79852b.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8550c458853aef79c1fb.jpg' },
+      { src: 'https://pic.imgdb.cn/item/654f8518c458853aef78d246.jpg' },
+    ]
   },
 ]
 

@@ -395,7 +395,7 @@ a.two.scroll {
 
 .gallery-grid1 {
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
 }
 
@@ -738,6 +738,22 @@ span.progressText {
     margin-bottom: 3em;
 }
 
+.about-content {
+    text-align: justify;
+    text-indent: 2em;
+}
+.about-bg {
+    margin: auto;
+    width: 64%;
+    background: #2b3945 none repeat scroll 0 0;
+    padding: 24px 0;
+}
+.about-img {
+    width: 100%;
+    position: relative;
+    left: 24px;
+}
+
 .banner_bottom {
     padding: 7em 0;
 }
@@ -1057,6 +1073,32 @@ p.sub_p {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.29);
     letter-spacing: 1px;
     font-weight: 700;
+}
+
+.visit-grid {
+    margin: 6px;
+    transition: all 200ms;
+}
+.visit-grid:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+.visit-description {
+    margin: auto;
+    padding: 0 24px;
+    min-width: 320px;
+    width: 80%;
+    text-align: justify;
+    text-indent: 2em;
+}
+.top-line, .end-line {
+    display: flex;
+}
+.flex1 {
+    flex: 1;
+}
+.flex2 {
+    flex: 1.777;
 }
 
 a.button {
@@ -2670,9 +2712,9 @@ p.read_para i {
     .price-sec, .works, .banner_bottom, .tesimonials, .footer, .tesimonials {
         padding: 3em 0;
     }
-    .gal-sec,.gallery-grid1 {
+    /* .gal-sec,.gallery-grid1 {
         width: 100%;
-    }
+    } */
     .p-mask h4 {
         font-size: 1.2em;
     }
