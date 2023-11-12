@@ -86,8 +86,9 @@
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
 				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
-				<!-- <li data-target="#myCarousel" data-slide-to="2" class=""></li> -->
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+				<li data-target="#myCarousel" data-slide-to="3"></li>
 			</ol>
 			<div id="banners" class="carousel-inner" role="listbox">
 			</div>
@@ -124,7 +125,7 @@
 					</ul>
 				</div> -->
 				<div class="about-bg">
-					<img src="https://pic.imgdb.cn/item/654f6e77c458853aef12bfdf.jpg" class="about-img">
+					<img src="https://pic.imgdb.cn/item/6550cf8dc458853aef727410.jpg" class="about-img">
 				</div>
 				<div class="banner_bottom_left">
 					<!-- <h4>Wedding Photography</h4> -->
@@ -192,7 +193,7 @@
 								</div>
 							</div>
 						</div>
-						<h3>Effective customer service</h3>
+						<h3>Effective Customer Service</h3>
 						<p>24 hours customer service team with the goal for development long-term business relationships with all of our clients.</p>
 					</div>
 					<div class="col-md-4 ser-first-grid text-center">
@@ -203,7 +204,7 @@
 								</div>
 							</div>
 						</div>
-						<h3>Professional team</h3>
+						<h3>Professional Team</h3>
 						<p>Strong and competitive development team including top engineers and skillful staffs work together.</p>
 					</div>
 					<div class="col-md-4 ser-first-grid text-center">
@@ -214,7 +215,7 @@
 								</div>
 							</div>
 						</div>
-						<h3>Excellent products</h3>
+						<h3>Excellent Products</h3>
 						<p>Our products help clients to be competitive while providing the high quality goods and maximizing their potential profit.</p>
 					</div>
 					<div class="clearfix"></div>
@@ -260,7 +261,7 @@
 											</div>
 										</div>
 										<div class="address-right">
-											<h6>Phone Number</h6>
+											<h6>Whatsapp/Wechat Number</h6>
 											<p href="tel:+86 15353003509">+86 15353003509</p>
 										</div>
 										<div class="clearfix"> </div>
@@ -301,13 +302,16 @@
 								</div>
 							</div>
 						</div>
-						
-						<div class="clearfix"> </div>
 					</div>
 				</div>
 			</div>
 			<!--//tabs-->
-			<div class="clearfix"> </div>
+			<div class="clearfix"></div>
+
+			<div class="chat">
+				<img class="chat-img" src="./images/Whats_code.png" alt="WhatsApp">
+				<img class="chat-img" src="./images/Wechat_code.png" alt="Wechat">
+			</div>
 			<ul class="social-nav model-3d-0 footer-social social two">
 				<li>
 					<a href="https://www.facebook.com/profile.php?id=61550550726436" class="facebook" target="_blank">
@@ -481,10 +485,6 @@
 				pictures
 			} = d
 			let titleDom = `<h3 class="tittle_w3ls mt48">${title}</h3>`
-			// let arr = []
-			// while (pictures.length) {
-			// 	arr.push(pictures.splice(0, 3))
-			// }
 			let s = '<div class="product-section">'
 			let sectionDom = pictures.map(p => {
 				s += `

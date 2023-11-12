@@ -298,6 +298,9 @@ span.desc {
 
 .carousel-control {
     line-height: 42em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-indicators li {
@@ -1623,6 +1626,21 @@ ol.carousel-indicators.two {
 .dodecagon.c3 {
     width: 6em;
     height: 6em;
+}
+
+
+.chat {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 48px;
+}
+.chat-img {
+    max-width: 200px;
+    width: 100%;
+    margin: auto 24px;
+    display: block;
+    margin-bottom: 24px;
 }
 
 /**
