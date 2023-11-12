@@ -9,13 +9,13 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="keywords" content="" />
 	<script type="application/x-javascript">
-		// addEventListener("load", function () {
-		// 	setTimeout(hideURLbar, 0);
-		// }, false);
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 
-		// function hideURLbar() {
-		// 	window.scrollTo(0, 1);
-		// }
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
 	</script>
 	<!--//tags -->
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
@@ -138,7 +138,7 @@
 	<!--//ab-->
 
 	<!--来访图-->
-	<div class="price-sec" id="visit">
+	<div class="price-sec">
 		<div class="container">
 			<h3 class="tittle_w3ls cen">International Customers Visit</h3>
 			<p class="visit-description">With the rapid development of the company and the continuous innovation of research and development technology, Longda Jiaye is also expanding the international market. Foreign customers have investigated the company's strength, product production process, and understood the company's strength, development planning and product sales.</p>
@@ -517,6 +517,7 @@
 	<script type="text/javascript">
 		$(function () {
 			$('.gallery-grid1 a').Chocolat();
+			$('#visit a').Chocolat();
 		});
 	</script>
 	<!-- //gallery -->
