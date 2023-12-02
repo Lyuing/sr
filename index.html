@@ -125,7 +125,7 @@
 					</ul>
 				</div> -->
 				<div class="about-bg">
-					<img src="https://pic.imgdb.cn/item/6550cf8dc458853aef727410.jpg" class="about-img">
+					<img src="https://pic.imgdb.cn/item/656b4ba5c458853aefaf3d6e.jpg" class="about-img">
 				</div>
 				<div class="banner_bottom_left">
 					<!-- <h4>Wedding Photography</h4> -->
@@ -138,46 +138,12 @@
 	</div>
 	<!--//ab-->
 
-	<!--来访图-->
-	<div class="price-sec">
-		<div class="container">
-			<h3 class="tittle_w3ls cen">International Customers Visit</h3>
-			<p class="visit-description">With the rapid development of the company and the continuous innovation of research and development technology, Longda Jiaye is also expanding the international market. Foreign customers have investigated the company's strength, product production process, and understood the company's strength, development planning and product sales.</p>
-			<p class="visit-description">Excellent technology and service can be recognized by customers. Good products and good services are the most powerful marketing tools.</p>
-			<div id="visit" class="inner_sec_info_agile_w3_info">
-				<div class="top-line">
-					<div class="flex1 visit-grid">
-						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/654f847bc458853aef75a38f.jpg">
-							<img src="https://pic.imgdb.cn/item/654f847bc458853aef75a38f.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex1 visit-grid">
-						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/654f847bc458853aef75a230.jpg">
-							<img src="https://pic.imgdb.cn/item/654f847bc458853aef75a230.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="end-line">
-					<div class="flex1 visit-grid">
-						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/654f847bc458853aef759ff4.jpg">
-							<img src="https://pic.imgdb.cn/item/654f847bc458853aef759ff4.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex2 visit-grid">
-						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/654f84dfc458853aef77b86b.jpg">
-							<img src="https://pic.imgdb.cn/item/654f84dfc458853aef77b86b.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex1 visit-grid">
-						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/654f847bc458853aef75a400.jpg">
-							<img src="https://pic.imgdb.cn/item/654f847bc458853aef75a400.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
+	
+	<!-- 产品介绍 -->
+	<div class="gallery_sec" id="gallery">
 		<div class="clearfix"></div>
 	</div>
+
 
 	<!--优势 what-->
 	<div class="works" id="services">
@@ -225,8 +191,45 @@
 	</div>
 	<!--//what-->
 
-	<!-- 产品介绍 -->
-	<div class="gallery_sec" id="gallery">
+	
+	<!--来访图-->
+	<div class="price-sec">
+		<div class="container">
+			<h3 class="tittle_w3ls cen">International Customers Visit</h3>
+			<p class="visit-description">With the rapid development of the company and the continuous innovation of research and development technology, Longda Jiaye is also expanding the international market. Foreign customers have investigated the company's strength, product production process, and understood the company's strength, development planning and product sales.</p>
+			<p class="visit-description">Excellent technology and service can be recognized by customers. Good products and good services are the most powerful marketing tools.</p>
+			<div id="visit" class="inner_sec_info_agile_w3_info">
+				<div class="top-line">
+					<div class="flex1 visit-grid">
+						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/656b5cdac458853aef0cd413.jpg">
+							<img src="https://pic.imgdb.cn/item/656b5cdac458853aef0cd413.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="flex1 visit-grid">
+						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/656b5cdac458853aef0cd3b6.jpg">
+							<img src="https://pic.imgdb.cn/item/656b5cdac458853aef0cd3b6.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="end-line">
+					<div class="flex1 visit-grid">
+						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/656b515cc458853aefcd8349.jpg">
+							<img src="https://pic.imgdb.cn/item/656b515cc458853aefcd8349.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="flex2 visit-grid">
+						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/656b5d28c458853aef0e5229.jpg">
+							<img src="https://pic.imgdb.cn/item/656b5d28c458853aef0e5229.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+					<div class="flex1 visit-grid">
+						<a title="100% Satisfaction." href="https://pic.imgdb.cn/item/656b515cc458853aefcd826a.jpg">
+							<img src="https://pic.imgdb.cn/item/656b515cc458853aefcd826a.jpg" class="img-responsive" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="clearfix"></div>
 	</div>
 
@@ -344,6 +347,27 @@
 	<!-- //footer -->
 	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
+	
+	<script src="./js/pictures.js"></script>
+	<script>
+		let banners = bannersDto.map( (i, index)=> {
+			return `
+			<div class="item item${index +1} ${index === 0 ? 'active' : ''}">
+				<div class="container">
+					<img class="banner-img" src="${i.src}" alt="banner.jpg">
+					<div class="carousel-caption">
+						<h3>${i.title || ''}</h3>
+						<p>${i.description || ''}</p>
+						<div class="bnr-button">
+							<a class="act" href="${i.link || ''}">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>`
+		})
+		document.getElementById('banners').innerHTML = banners.join('')
+	</script>
+
 	<script>
 		// You can also use "$(window).load(function() {"
 		$(function () {
@@ -437,13 +461,13 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 			/*
-									var defaults = {
-							  			containerID: 'toTop', // fading element id
-										containerHoverID: 'toTopHover', // fading element hover id
-										scrollSpeed: 1200,
-										easingType: 'linear' 
-							 		};
-									*/
+				var defaults = {
+					containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+				};
+			*/
 
 			$().UItoTop({
 				easingType: 'easeOutQuart'
@@ -454,31 +478,7 @@
 		// 	console.log('scroll', document.documentElement.scrollTop || document.body.scrollTop)
 		// });
 	</script>
-	<script src="./js/pictures.js"></script>
 	<script>
-		let banners = bannersDto.map( (i, index)=> {
-			return `
-			<div class="item item${index +1} ${index === 0 ? 'active' : ''}">
-				<div class="container">
-					<img class="banner-img" src="${i.src}" alt="banner.jpg">
-					<div class="carousel-caption">
-						<h3>${i.title || ''}</h3>
-						<p>${i.description || ''}</p>
-						<div class="bnr-button">
-							<a class="act" href="${i.link || ''}">Read More</a>
-						</div>
-					</div>
-				</div>
-			</div>`
-		})
-		document.getElementById('banners').innerHTML = banners.join('')
-
-		// let visits = visitsDto.map( (i, index)=> {
-		// 	return `
-		// 	`
-		// })
-		// document.getElementById('visit').innerHTML = visits.join('')
-
 		let part = dto.map(d => {
 			const {
 				title,
@@ -504,7 +504,9 @@
 			return titleDom + s + endDom
 		})
 		// console.log('part', part)
-		document.getElementById('gallery').innerHTML = part.join(' ')
+		setTimeout(()=>{
+			document.getElementById('gallery').innerHTML = part.join(' ')
+		}, 500)
 	</script>
 
 

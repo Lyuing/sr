@@ -758,7 +758,7 @@ span.progressText {
 }
 
 .banner_bottom {
-    padding: 7em 0;
+    padding: 7em 0 3em;
 }
 
 .news-left {
@@ -1744,7 +1744,7 @@ ol.carousel-indicators.two {
 /*-- footer --*/
 
 .footer {
-    margin-top: 2em;
+    /* margin-top: 2em; */
     padding: 6em 0;
     background: #1d2931;
 }
