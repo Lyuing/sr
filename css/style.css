@@ -56,7 +56,7 @@ label {
 }
 
 .banner_top {
-    padding-top: 94px;
+    padding-top: calc( 50px + 1.2em);
 }
 
 
@@ -78,7 +78,7 @@ label {
 .nav_top_fx_w3layouts_agileits {
     margin: 0 auto;
     width: 88%;
-    padding: 1.4em 0;
+    padding: 0.6em 0;
 }
 
 .navbar-brand {
@@ -96,6 +96,7 @@ label {
 
 .navbar-default .navbar-brand {
     color: #2b3945;
+    display: block;
 }
 
 .logo h1 a {
@@ -2114,8 +2115,8 @@ p.copy-right a:hover {
 }
 
 .img-logo {
-    width: 64px;
-    margin-top: -8px;
+    /* max-width: 64px; */
+    max-height: 100%;
 }
 .navbar-default .navbar-nav>li>a:hover {
     color: #1f7bd7;
@@ -2549,6 +2550,7 @@ p.read_para i {
         border-radius: 0px;
     }
     .navbar-default .navbar-toggle {
+        margin-top: 8px;
         border-color: #2d2c2c;
     }
     .navbar-default .navbar-toggle .icon-bar {
@@ -2911,7 +2913,7 @@ p.read_para i {
         padding: 0;
     }
     .nav_top_fx_w3layouts_agileits {
-        padding: 1em 0;
+        padding: 0.6em 0;
     }
 }
 
