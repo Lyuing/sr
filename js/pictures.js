@@ -1,9 +1,7 @@
 
 const bannersDto = [
-  {src: 'https://pic.imgdb.cn/item/656b5afac458853aef0376bc.jpg'},
-  {src: 'https://pic.imgdb.cn/item/656b4ba6c458853aefaf3f03.jpg'},
-  {src: 'https://pic.imgdb.cn/item/656b4ba5c458853aefaf3d6e.jpg'},
-  {src: 'https://pic.imgdb.cn/item/656b5afac458853aef0377c8.jpg'},
+  {src: 'https://pic.imgdb.cn/item/656b4ba6c458853aefaf41fb.jpg'},
+  {src: 'https://pic.imgdb.cn/item/656d688ac458853aefdb5bc3.jpg'},
 ]
 const visitsDto = [
   'https://pic.imgdb.cn/item/654f847bc458853aef75a38f.jpg',
