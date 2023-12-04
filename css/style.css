@@ -2114,6 +2114,13 @@ p.copy-right a:hover {
     padding-top: 4em;
 }
 
+.tittle_description {
+    text-align: center;
+    margin-bottom: 8px;
+    padding: 0 16px;
+    text-indent: 2em;
+}
+
 .img-logo {
     /* max-width: 64px; */
     max-height: 100%;
