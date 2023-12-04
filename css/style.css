@@ -366,7 +366,7 @@ a.two.scroll {
 
 .product-section {
     overflow: hidden;
-    padding: 0 8px;
+    padding: 0 8px 48px;
 }
 
 .gallery-grid1 .img-product {
