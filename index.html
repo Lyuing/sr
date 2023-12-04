@@ -453,7 +453,7 @@
 			$(".scroll, .navbar li a, .footer li a").click(function (event) {
 				$('html,body').animate({
 					scrollTop: $(this.hash).offset().top
-				}, 1000);
+				}, 100);
 			});
 		});
 	</script>
@@ -508,7 +508,7 @@
 		// console.log('part', part)
 		setTimeout(()=>{
 			document.getElementById('gallery').innerHTML = part.join(' ')
-		}, 500)
+		}, 0)
 	</script>
 
 
@@ -520,8 +520,10 @@
 	<!--light-box-files -->
 	<script type="text/javascript">
 		$(function () {
-			$('.gallery-grid1 a').Chocolat();
-			$('#visit a').Chocolat();
+			setTimeout(()=>{
+				$('.gallery-grid1 a').Chocolat();
+				$('#visit a').Chocolat();
+			}, 0)
 		});
 	</script>
 	<!-- //gallery -->
