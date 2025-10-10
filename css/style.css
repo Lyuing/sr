@@ -1095,6 +1095,12 @@ p.sub_p {
     text-align: justify;
     text-indent: 2em;
 }
+.visit-grid-box, .visit-grid-box .img-responsive {
+    display: inline-block;
+    height: 100%;
+    object-fit: cover;
+}
+
 .top-line, .end-line {
     display: flex;
 }
