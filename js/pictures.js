@@ -1,7 +1,11 @@
 
 const bannersDto = [
-  {src: 'https://pic.imgdb.cn/item/656b4ba6c458853aefaf41fb.jpg'},
+  // {src: 'https://pic.imgdb.cn/item/656b4ba6c458853aefaf41fb.jpg'},
   {src: 'https://pic.imgdb.cn/item/656d688ac458853aefdb5bc3.jpg'},
+  {src: 'https://pic1.imgdb.cn/item/68f23c0cc5157e1a887e718c.jpg'},
+  {src: 'https://pic1.imgdb.cn/item/68f23c56c5157e1a887e71a3.jpg'},
+  {src: 'https://pic1.imgdb.cn/item/68f23c98c5157e1a887e71cf.jpg'},
+  // {src: 'https://pic1.imgdb.cn/item/68f23cf0c5157e1a887e7218.jpg'},
 ]
 const visitsDto = [
   'https://pic.imgdb.cn/item/654f847bc458853aef75a38f.jpg',
