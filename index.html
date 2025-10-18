@@ -137,56 +137,20 @@
 	</div>
 	<!--//ab-->
 
-	
+
 	<!-- 产品介绍 -->
 	<div class="gallery_sec clearfix" id="gallery">
 		<div class="clearfix"></div>
 	</div>
 
-	
+
 	<!--来访图-->
 	<div class="price-sec">
 		<div class="container">
 			<h3 class="tittle_w3ls cen">International Customers Visit</h3>
 			<p class="visit-description">With the rapid development of the company and the continuous innovation of research and development technology, Longda Jiaye is also expanding the international market. Foreign customers have investigated the company's strength, product production process, and understood the company's strength, development planning and product sales.</p>
 			<p class="visit-description">Excellent technology and service can be recognized by customers. Good products and good services are the most powerful marketing tools.</p>
-			<div id="visit" class="inner_sec_info_agile_w3_info">
-				
-				<div class="end-line">
-					<div class="flex2 visit-grid">
-						<a class="visit-grid-box" href="https://pic1.imgdb.cn/item/68e8b7b7c5157e1a88622f89.jpg">
-							<img src="https://pic1.imgdb.cn/item/68e8b7b7c5157e1a88622f89.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex1 visit-grid">
-						<a class="visit-grid-box" href="https://pic1.imgdb.cn/item/68e8ae34c5157e1a88620f01.jpg">
-							<img src="https://pic1.imgdb.cn/item/68e8ae34c5157e1a88620f01.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex2 visit-grid">
-						<a class="visit-grid-box" href="https://pic1.imgdb.cn/item/68e8ade0c5157e1a88620e41.jpg">
-							<img src="https://pic1.imgdb.cn/item/68e8ade0c5157e1a88620e41.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="top-line">
-					<div class="flex1 visit-grid">
-						<a class="visit-grid-box" href="https://pic1.imgdb.cn/item/68e8ae60c5157e1a88620f64.jpg">
-							<img src="https://pic1.imgdb.cn/item/68e8ae60c5157e1a88620f64.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex1 visit-grid">
-						<a class="visit-grid-box" href="https://pic1.imgdb.cn/item/68e8b0f0c5157e1a886212cd.jpg">
-							<img src="https://pic1.imgdb.cn/item/68e8b0f0c5157e1a886212cd.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-					<div class="flex1 visit-grid">
-						<a class="visit-grid-box" href="https://pic1.imgdb.cn/item/68e9da83c5157e1a886439df.jpg">
-							<img src="https://pic1.imgdb.cn/item/68e9da83c5157e1a886439df.jpg" class="img-responsive" alt="">
-						</a>
-					</div>
-				</div>
-			</div>
+			<div id="visit" class="inner_sec_info_agile_w3_info"></div>
 		</div>
 		<div class="clearfix"></div>
 	</div>
@@ -352,12 +316,15 @@
 	<!-- //footer -->
 	<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script src="js/responsiveslides.min.js"></script>
-	
+
 	<script src="./js/pictures.js"></script>
 	<script>
-		let banners = bannersDto.map( (i, index)=> {
+		/**
+		 * banner图创建
+		*/
+		const banners = bannersDto.map((i, index) => {
 			return `
-			<div class="item item${index +1} ${index === 0 ? 'active' : ''}">
+			<div class="item item${index + 1} ${index === 0 ? 'active' : ''}">
 				<div class="container">
 					<img class="banner-img" src="${i.src}" alt="banner.jpg">
 					<div class="carousel-caption">
@@ -370,11 +337,75 @@
 				</div>
 			</div>`
 		})
-		const indicators = bannersDto.map( (i, index)=> {
-			return `<li data-target="#myCarousel" data-slide-to="${index}" class="${ index ? '' : 'active'}"></li>`
+		const indicators = bannersDto.map((i, index) => {
+			return `<li data-target="#myCarousel" data-slide-to="${index}" class="${index ? '' : 'active'}"></li>`
 		})
 		document.getElementById('banners').innerHTML = banners.join('')
 		document.getElementById('bannersIndicators').innerHTML = indicators.join('')
+
+		/**
+		 * 产品图 创建
+		 */
+		const part = dto.map(d => {
+			const {
+				title,
+				pictures,
+				description
+			} = d
+			let titleDom = `<h3 class="tittle_w3ls">${title}</h3>`
+			let subDescription = `<p class="tittle_description">${description}</p>`
+			let s = '<div class="product-section">'
+			let sectionDom = pictures.map(p => {
+				s += `
+				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 gal-sec gallery-grid1">
+					<a class="gal-inner gal-holder" title="" href="${p.src}">
+						<img src="${p.src}" alt=" " class="img-product img-responsive" />
+						<div class="p-mask">
+							<h4>${p.title || ''}</h4>
+							<p>${p.description || ''}</p>
+						</div>
+					</a>
+				</div>
+				`
+			})
+			s += '</div>'
+			const endDom = '<div class="clearfix"></div>'
+			return titleDom + subDescription + s + endDom
+		})
+		// console.log('part', part)
+		setTimeout(() => {
+			document.getElementById('gallery').innerHTML = part.join(' ')
+		}, 0)
+
+		/**
+		 * 来访图 创建
+		 */
+		const visitHtml = (() => {
+			const endLine = visitsDto.slice(0, 3).map(v =>
+				`<div class="flex${v.flex} visit-grid">
+					<a class="visit-grid-box" href="${v.src}">
+						<img src="${v.src}" class="img-responsive" alt="">
+					</a>
+				</div>`
+			).join('')
+
+			const topLine = visitsDto.slice(3, 6).map(v =>
+				`<div class="flex${v.flex} visit-grid">
+					<a class="visit-grid-box" href="${v.src}">
+						<img src="${v.src}" class="img-responsive" alt="">
+					</a>
+				</div>`
+			).join('')
+
+			return `
+				<div class="end-line">${endLine}</div>
+				<div class="top-line">${topLine}</div>
+			`
+		})()
+
+		setTimeout(() => {
+			document.getElementById('visit').innerHTML = visitHtml
+		}, 0)
 	</script>
 
 	<script>
@@ -487,38 +518,6 @@
 		// 	console.log('scroll', document.documentElement.scrollTop || document.body.scrollTop)
 		// });
 	</script>
-	<script>
-		let part = dto.map(d => {
-			const {
-				title,
-				pictures,
-				description
-			} = d
-			let titleDom = `<h3 class="tittle_w3ls">${title}</h3>`
-			let subDescription = `<p class="tittle_description">${description}</p>`
-			let s = '<div class="product-section">'
-			let sectionDom = pictures.map(p => {
-				s += `
-				<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 gal-sec gallery-grid1">
-					<a class="gal-inner gal-holder" title="" href="${p.src}">
-						<img src="${p.src}" alt=" " class="img-product img-responsive" />
-						<div class="p-mask">
-							<h4>${p.title || ''}</h4>
-							<p>${p.description || ''}</p>
-						</div>
-					</a>
-				</div>
-				`
-			})
-			s += '</div>'
-			const endDom = '<div class="clearfix"></div>'
-			return titleDom + subDescription + s + endDom
-		})
-		// console.log('part', part)
-		setTimeout(()=>{
-			document.getElementById('gallery').innerHTML = part.join(' ')
-		}, 0)
-	</script>
 
 
 	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
@@ -567,7 +566,7 @@
 						//向左滑动
 						$('#myCarousel').carousel('next');
 					}
-				} 
+				}
 			});
 		});
 	</script>

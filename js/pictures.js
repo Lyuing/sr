@@ -7,12 +7,15 @@ const bannersDto = [
   {src: 'https://pic1.imgdb.cn/item/68f23c98c5157e1a887e71cf.jpg'},
   // {src: 'https://pic1.imgdb.cn/item/68f23cf0c5157e1a887e7218.jpg'},
 ]
+
+// 来访图数据
 const visitsDto = [
-  'https://pic.imgdb.cn/item/654f847bc458853aef75a38f.jpg',
-  'https://pic.imgdb.cn/item/654f847bc458853aef759ff4.jpg',
-  'https://pic.imgdb.cn/item/654f847bc458853aef75a230.jpg',
-  'https://pic.imgdb.cn/item/654f847bc458853aef75a400.jpg',
-  'https://pic.imgdb.cn/item/654f84dfc458853aef77b86b.jpg',
+  { src: 'https://pic1.imgdb.cn/item/68e8b7b7c5157e1a88622f89.jpg', flex: 2 },
+  { src: 'https://pic1.imgdb.cn/item/68e8ae34c5157e1a88620f01.jpg', flex: 1 },
+  { src: 'https://pic1.imgdb.cn/item/68e8ade0c5157e1a88620e41.jpg', flex: 2 },
+  { src: 'https://pic1.imgdb.cn/item/68e8ae60c5157e1a88620f64.jpg', flex: 1 },
+  { src: 'https://pic1.imgdb.cn/item/68e8b0f0c5157e1a886212cd.jpg', flex: 1 },
+  { src: 'https://pic1.imgdb.cn/item/68e9da83c5157e1a886439df.jpg', flex: 1 },
 ]
 const dto = [
   {
